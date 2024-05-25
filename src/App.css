@@ -1,0 +1,113 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #fff;
+  background-color: #242424;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 90vh;
+}
+
+main {
+  display: grid;
+  text-align: center;
+  height: 90vh;
+  width: 90vw;
+  grid-template-rows: 60px 1fr 60px;
+}
+
+header, footer {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  justify-content: center;
+}
+
+header {
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 1.1;
+}
+
+figure {
+  border-radius: 9999px;
+  background-color: white;
+  cursor: pointer;
+}
+
+section {
+  position: relative;
+}
+
+section > figure {
+  top: 0;
+  left: 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.play {
+  margin-top: 100px;
+  height: 50px;
+  width: auto;
+}
+
+.card {
+  margin: auto;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 50vw;
+  height: 25vh;
+  top: 25%;
+  left: 25%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card > button {
+  margin-top: 10px;
+}
